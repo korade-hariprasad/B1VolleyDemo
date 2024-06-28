@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                        JSONObject productObject=jsonArray.getJSONObject(i);
                        Log.d("mytag",productObject.getString("category"));
                     }
-
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
@@ -66,7 +65,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
         requestQueue.add(stringRequest);
-
-
     }
 }
