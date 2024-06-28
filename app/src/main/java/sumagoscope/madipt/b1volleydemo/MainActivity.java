@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         RequestQueue requestQueue= Volley.newRequestQueue(this);
 
-        String url="https://dummyjson.com/products";
+        String url="https://dummyjson.com/products?select=title,price,thumbnail,category";
 
         StringRequest stringRequest=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
